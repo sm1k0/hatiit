@@ -16,7 +16,6 @@ namespace LocalNetworkMessenger
         public event Action<string, string> MessageReceived;
         private string userName;
 
-        // Конструктор, принимающий имя пользователя
         public Messenger(string userName)
         {
             this.userName = userName;

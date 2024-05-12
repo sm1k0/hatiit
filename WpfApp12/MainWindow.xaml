@@ -3,23 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Local Network Messenger" Height="450" Width="800">
     <Grid>
-        <!-- Центрирование контента -->
         <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
-            <!-- Прямоугольник -->
             <Rectangle Fill="#FFF5F5F5" Stroke="Black" RadiusX="10" RadiusY="10" Width="300" Height="150"/>
 
-            <!-- Текст "Enter Your Name" -->
             <TextBlock Text="Enter Your Name:" Margin="0,45,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
 
-            <!-- Полоска для ввода имени -->
             <TextBox Grid.Column="0" Width="200" Margin="10,30,10,10" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="UserNameTextBox" BorderBrush="Gray" Background="LightGray"/>
 
-            <!-- Круглая кнопка -->
             <Button Width="100" Margin="0,109,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Click="StartChatButton_Click" Padding="10">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">

@@ -21,8 +21,7 @@ namespace LocalNetworkMessenger
             messenger.ClientConnected += OnClientConnected;
             messenger.ClientDisconnected += OnClientDisconnected;
 
-            // Запускаем сервер на заданном порту
-            int port = 8888; // Пример порта
+            int port = 8080; 
             Task.Run(() => messenger.StartServerAsync(port));
         }
 
@@ -80,7 +79,6 @@ namespace LocalNetworkMessenger
         private void Window_Closed(object sender, EventArgs e)
         {
             messenger.StopServer();
-            // Возвращаемся к окну выбора
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
         }

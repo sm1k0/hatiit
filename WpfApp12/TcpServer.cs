@@ -38,7 +38,7 @@ namespace LocalNetworkMessenger
             }
             catch (OperationCanceledException)
             {
-                // Task was canceled
+                
             }
             finally
             {
@@ -98,7 +98,6 @@ namespace LocalNetworkMessenger
         {
             byte[] buffer = Encoding.UTF8.GetBytes(message);
 
-            // Отправляем сообщение каждому клиенту
             foreach (TcpClient client in clients)
             {
                 NetworkStream stream = client.GetStream();
